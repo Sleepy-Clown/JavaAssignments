@@ -1,0 +1,13 @@
+James Bond,200304,1000.33,checking,20
+Michelle Wang,200224,3333.3,savings,0.5
+Tayer Smith,249843,132.87,checking,25
+David Jess,265334,225.7,checking,30
+Emma Wasch,294830,888.6,savings,1.5
+Fanny Drew,244833,762.94,savings,1.0
+Oliva Ban,230940,501.12,checking,25
+Mike Lam,215443,7343.29,savings,1.2
+Mike Lam,215443,7343.29,savings
+Mike Lam,215443,222.3,7343.29,savings,1.2
+Mike Lam,215443,balance,savings,1.2
+Mike Lam,215443,7343.29,other,1.2
+Mike Lam,215443,7343.29,savings,interest
