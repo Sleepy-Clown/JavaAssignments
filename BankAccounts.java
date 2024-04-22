@@ -1,5 +1,3 @@
-package VanceCIS265AS4;
-
 import java.io. *;
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +20,7 @@ public class BankAccounts {
 	public void addNewAccount(String name, int num, double bal, String accType) throws IOException {
 		list.add(new Account(name, num, bal, accType));
 		
-		java.io.File file = new java.io.File("C:\\Users\\rhian\\eclipse-workspace\\VanceCIS265Assignments\\src\\VanceCIS265AS4\\");
+		java.io.File file = new java.io.File(System.getProperty("java.class.path")+"\\"+BankAccounts.class.getPackageName()+"\\");
 		String[] args = new String[] {"accounts.txt"};
 		
 		if (args.length != 1) {
@@ -41,7 +39,7 @@ public class BankAccounts {
 	public void addNewCheckingAccount(String name, int num, double bal, String accType, int lim) throws IOException {
 		clist.add(new checkingAccount(name, num, bal, accType, lim));
 		
-		java.io.File file = new java.io.File("C:\\Users\\rhian\\eclipse-workspace\\VanceCIS265Assignments\\src\\VanceCIS265AS4\\");
+		java.io.File file = new java.io.File(System.getProperty("java.class.path")+"\\"+BankAccounts.class.getPackageName()+"\\");
 		String[] args = new String[] {"accounts.txt"};
 		
 		if (args.length != 1) {
@@ -60,7 +58,7 @@ public class BankAccounts {
 	public void addNewSavingsAccount(String name, int num, double bal, String accType, double intr) throws IOException {
 		slist.add(new savingsAccount(name, num, bal, accType, intr));
 		
-		java.io.File file = new java.io.File("C:\\Users\\rhian\\eclipse-workspace\\VanceCIS265Assignments\\src\\VanceCIS265AS4\\");
+		java.io.File file = new java.io.File(System.getProperty("java.class.path")+"\\"+BankAccounts.class.getPackageName()+"\\");
 		String[] args = new String[] {"accounts.txt"};
 		
 		if (args.length != 1) {
@@ -77,7 +75,7 @@ public class BankAccounts {
 	}
 	
 	public void addAccounts() throws IOException{
-		String file = ("C:\\Users\\rhian\\eclipse-workspace\\VanceCIS265Assignments\\src\\VanceCIS265AS4\\");
+		String file = (System.getProperty("java.class.path")+"\\"+BankAccounts.class.getPackageName()+"\\");
 		String[] args = new String[] {"accounts.txt"};
 		
 		if (args.length != 1) {
@@ -173,7 +171,7 @@ public class BankAccounts {
 	}
 	
 	public void reversedAccountsFile() throws IOException{
-		String file = ("C:\\Users\\rhian\\eclipse-workspace\\VanceCIS265Assignments\\bin\\VanceCIS265AS4\\");
+		String file = (System.getProperty("java.class.path")+"\\"+BankAccounts.class.getPackageName()+"\\");
 		
 		String[] args = new String[]{"accounts.txt", "accounts_reversed"};
 		
@@ -277,7 +275,7 @@ class Account {
 	}
 	
 	public void printAccount(PrintWriter output) throws IOException{
-		java.io.File file = new java.io.File("C:\\Users\\rhian\\eclipse-workspace\\VanceCIS265Assignments\\bin\\VanceCIS265AS4\\accounts.txt");
+		java.io.File file = new java.io.File(System.getProperty("java.class.path")+"\\"+Account.class.getPackageName()+"\\accounts.txt");
 		output = new PrintWriter(file);
 		if (file.exists()) { 
 			try(PrintWriter write = output){
@@ -345,7 +343,7 @@ class checkingAccount extends Account {
 	}
 	
 	public void printAccount(PrintWriter output) throws IOException{
-		java.io.File file = new java.io.File("C:\\Users\\rhian\\eclipse-workspace\\VanceCIS265Assignments\\bin\\VanceCIS265AS4\\accounts.txt");
+		java.io.File file = new java.io.File(System.getProperty("java.class.path")+"\\"+checkingsAccount.class.getPackageName()+"\\accounts.txt");
 		output = new PrintWriter(file);
 		if (file.exists()) { 
 			try(PrintWriter write = output){
@@ -413,7 +411,7 @@ class savingsAccount extends Account{
 	}
 	
 	public void printAccount(PrintWriter output) throws IOException{
-		java.io.File file = new java.io.File("C:\\Users\\rhian\\eclipse-workspace\\VanceCIS265Assignments\\bin\\VanceCIS265AS4\\accounts.txt");
+		java.io.File file = new java.io.File(System.getProperty("java.class.path")+"\\"+savingsAccount.class.getPackageName()+"\\accounts.txt");
 		output = new PrintWriter(file);
 		if (file.exists()) { 
 			try(PrintWriter write = output){
