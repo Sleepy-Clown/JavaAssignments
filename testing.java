@@ -1,5 +1,3 @@
-package VanceCIS265AS4;
-
 import java.io. *;
 import java.util.ArrayList;
 import java.util.List;
@@ -34,7 +32,7 @@ class Banks {
 	}
 	
 	public List<String> addAccounts() throws IOException{
-		String file = ("C:\\Users\\rhian\\eclipse-workspace\\VanceCIS265Assignments\\src\\VanceCIS265AS4\\");
+		String file = (System.getProperty("java.class.path")+"\\"+Banks.class.getPackageName()+"\\");
 		String[] args = new String[] {"accounts.txt"};
 		
 		if (args.length != 1) {
@@ -175,7 +173,7 @@ class Banks {
 	}//close printAllAccounts
 	
 	public void reversedAccountsFile() throws IOException{
-		String file = ("C:\\Users\\rhian\\eclipse-workspace\\VanceCIS265Assignments\\bin\\VanceCIS265AS4\\");
+		String file = (System.getProperty("java.class.path")+"\\"+Banks.class.getPackageName()+"\\");
 		
 		String[] args = new String[]{"accounts.txt", "accounts_reversed"};
 		
@@ -310,7 +308,7 @@ class Accounts {
 	}
 	
 	public void printAccount(PrintWriter output) throws IOException{
-		java.io.File file = new java.io.File("C:\\Users\\rhian\\eclipse-workspace\\VanceCIS265Assignments\\bin\\VanceCIS265AS4\\accounts_reversed.txt");
+		java.io.File file = new java.io.File(System.getProperty("java.class.path")+"\\"+Account.class.getPackageName()+"\\accounts_reversed.txt");
 		output = new PrintWriter(file);
 		if (file.exists()) { 
 			try(PrintWriter write = output){
@@ -388,7 +386,7 @@ class checkingAccounts extends Accounts {
 	}
 	
 	public void printAccount(PrintWriter output) throws IOException{
-		java.io.File file = new java.io.File("C:\\Users\\rhian\\eclipse-workspace\\VanceCIS265Assignments\\bin\\VanceCIS265AS4\\accounts_reversed.txt");
+		java.io.File file = new java.io.File(System.getProperty("java.class.path")+"\\"+checkingAccount.class.getPackageName()+"\\accounts_reversed.txt");
 		output = new PrintWriter(file);
 		if (file.exists()) { 
 			try(PrintWriter write = output){
@@ -466,7 +464,7 @@ class savingsAccounts extends Accounts{
 	}
 	
 	public void printAccount(PrintWriter output) throws IOException{
-		java.io.File file = new java.io.File("C:\\Users\\rhian\\eclipse-workspace\\VanceCIS265Assignments\\bin\\VanceCIS265AS4\\accounts_reversed.txt");
+		java.io.File file = new java.io.File(System.getProperty("java.class.path")+"\\"+savingsAccount.class.getPackageName()+"\\accounts_reversed.txt");
 		output = new PrintWriter(file);
 		if (file.exists()) { 
 			try(PrintWriter write = output){
