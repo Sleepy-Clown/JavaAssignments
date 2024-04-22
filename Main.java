@@ -1,5 +1,3 @@
-package VanceCIS265AS4;
-
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
@@ -134,8 +132,7 @@ class Menu {
 }
 
 /*
-* Name: Rhiannon Vance
-* CSU ID: 2823746
+* Name: [Sleepy Clown]
 * CIS 265: Assignment #4
 * Description: Create a program to search a text file and create checking and 
 * 				savings accounts based on the file contents.
